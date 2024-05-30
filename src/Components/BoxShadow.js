@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const BoxShadow = () => {
   return (
     <>
@@ -31,7 +32,7 @@ const BoxShadow = () => {
         <div className="border w-72 h-72 shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]"></div>
         <div className="border w-72 h-72 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]"></div>
       </div> */}
-      {/* <div>
+      <div>
         <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
           <h1>Basic Drop Shadow</h1>
           <div className="border-black  flex justify-between flex-wrap gap-28">
@@ -115,10 +116,185 @@ const BoxShadow = () => {
           </div>
         </div>
 
+        <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
+          <h1>Inset shadow</h1>
+          <div className="border-black  flex justify-between flex-wrap gap-28">
+            <div className="border w-64 h-64 shadow-[inset_0px_0px_10px_5px_rgba(0,0,0,0.3),inset_0px_0px_3px_1px_rgba(25,28,33,0.2),inset_0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Strong Inset Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[inset_0px_0px_5px_2px_rgba(0,0,0,0.1),inset_0px_0px_3px_1px_rgba(25,28,33,0.2),inset_0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Soft Inset Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[inset_0px_0px_10px_rgba(0,0,255,0.5),inset_0px_0px_3px_1px_rgba(25,28,33,0.2),inset_0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Inner Glow Inset Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[inset_0px_0px_10px_rgba(255,0,0,0.5),inset_0px_0px_3px_1px_rgba(25,28,33,0.2),inset_0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Colorful Inset Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[inset_5px_5px_15px_rgba(0,0,0,0.1),inset_-5px_-5px_15px_rgba(255,255,255,0.7),inset_0px_0px_3px_1px_rgba(25,28,33,0.2)] flex justify-center items-center">
+              Neumorphism Inset Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[inset_0px_0px_3px_rgba(0,0,0,0.1),inset_0px_0px_2px_1px_rgba(25,28,33,0.2),inset_0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Subtle Inset Shadow
+            </div>
+          </div>
+        </div>
+
+        <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
+          <h1>Multiple shadow</h1>
+          <div className="border-black  flex justify-between flex-wrap gap-28">
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(0,0,0,0.1),0px_1px_3px_0px_rgba(25,28,33,0.2)] flex justify-center items-center">
+              Dual Shadow Combination
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(0,0,0,0.1),0px_1px_3px_0px_rgba(25,28,33,0.2),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Triple Shadow Combination
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(0,0,0,0.1),0px_1px_3px_0px_rgba(25,28,33,0.2),0px_0px_0px_1px_rgba(25,28,33,0.08),0px_0px_15px_5px_rgba(0,0,0,0.1)] flex justify-center items-center">
+              Four Shadow Combination
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(0,0,0,0.1),0px_1px_3px_0px_rgba(25,28,33,0.2),0px_0px_0px_1px_rgba(25,28,33,0.08),0px_0px_15px_5px_rgba(0,0,0,0.1),inset_0px_0px_10px_3px_rgba(255,0,0,0.5)] flex justify-center items-center">
+              Five Shadow Combination
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(255,0,0,0.5),0px_1px_3px_0px_rgba(0,255,0,0.5),0px_0px_0px_1px_rgba(0,0,255,0.5)] flex justify-center items-center">
+              Colorful Shadow Combination
+            </div>
+
+            <div className="border w-64 h-64 shadow-[5px_5px_15px_rgba(0,0,0,0.1),-5px_-5px_15px_rgba(255,255,255,0.7),0px_0px_3px_1px_rgba(25,28,33,0.2)] flex justify-center items-center">
+              Neumorphism Shadow
+            </div>
+          </div>
+        </div>
+
+        <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
+          <h1>Outline shadow</h1>
+          <div className="border-black  flex justify-between flex-wrap gap-28">
+            <div className="border w-64 h-64 shadow-[0px_0px_0px_3px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Strong Outline Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_0px_3px_rgba(0,0,0,0.1)] flex justify-center items-center">
+              Soft Outline Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_0px_3px_rgba(255,0,0,0.5)] flex justify-center items-center">
+              Colorful Outline Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_0px_3px_rgba(0,0,0,0.1),0px_0px_0px_3px_rgba(255,255,255,0.7)] flex justify-center items-center">
+              Neumorphism Outline Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.1)] flex justify-center items-center">
+              Subtle Outline Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_0px_3px_rgba(0,0,0,0.3),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex justify-center items-center">
+              Dual Outline Shadow
+            </div>
+          </div>
+        </div>
+
+        <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
+          <h1>Spread shadow</h1>
+          <div className="border-black  flex justify-between flex-wrap gap-28">
+            <div className="border w-64 h-64 shadow-[0px_0px_10px_3px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Spread Shadow with Medium Size
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_20px_5px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Spread Shadow with Large Size
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Spread Shadow with Small Size
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_30px_10px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Spread Shadow with Extra Large Size
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_10px_3px_rgba(255,0,0,0.5)] flex justify-center items-center">
+              Spread Shadow with Colorful Effect
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_15px_5px_rgba(0,0,0,0.1),0px_0px_15px_5px_rgba(255,255,255,0.7)] flex justify-center items-center">
+              Spread Shadow with Neumorphism Style
+            </div>
+          </div>
+        </div>
+
+        <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
+          <h1>Blur shadow</h1>
+          <div className="border-black  flex justify-between flex-wrap gap-28">
+            <div className="border w-64 h-64 shadow-[0px_0px_10px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Light Blur Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_20px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Medium Blur Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_30px_rgba(0,0,0,0.3)] flex justify-center items-center">
+              Heavy Blur Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_10px_rgba(0,0,0,0.1)] flex justify-center items-center">
+              Soft Blur Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_10px_rgba(0,0,0,0.5)] flex justify-center items-center">
+              Sharp Blur Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_0px_10px_rgba(255,0,0,0.5)] flex justify-center items-center">
+              Colorful Blur Shadow
+            </div>
+          </div>
+        </div>
+
+        <div className=" border-black  px-32 py-20 flex justify-between flex-wrap gap-28">
+          <h1>Colorful shadow</h1>
+          <div className="border-black  flex justify-between flex-wrap gap-28">
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(255,0,0,0.5)] flex justify-center items-center">
+              Red Colorful Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(0,255,0,0.5)] flex justify-center items-center">
+              Green Colorful Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(0,0,255,0.5)] flex justify-center items-center">
+              Blue Colorful Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(128,0,128,0.5)] flex justify-center items-center">
+              Purple Colorful Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(255,255,0,0.5)] flex justify-center items-center">
+              Yellow Colorful Shadow
+            </div>
+
+            <div className="border w-64 h-64 shadow-[0px_8px_10px_-5px_rgba(255,165,0,0.5)] flex justify-center items-center">
+              Orange Colorful Shadow
+            </div>
+
+          </div>
+        </div>
+
         
 
         
-      </div> */}
+      </div>
     </>
   );
 };

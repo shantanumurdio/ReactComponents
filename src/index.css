@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* src/components/EnhancedButton.css */
+
+
+
+
 /* .hover\:animation-play-state-paused:hover {
     animation-play-state: paused;
   }

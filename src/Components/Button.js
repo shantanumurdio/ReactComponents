@@ -29,12 +29,17 @@ const Button = () => {
           <div className="absolute -bottom-2 -right-2 bg-yellow-300 h-full w-full -z-10 group-hover:bottom-0 group-hover:right-0 transition-all duration-200" />
           <span className="relative">Unapologetic</span>
         </button>
-        <button className="p-[3px] relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-          <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-            Lit up borders
-          </div>
-        </button>
+        <button className="p-[3px] relative overflow-hidden group">
+  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg blur-md opacity-75 transition-transform duration-300 ease-out group-hover:blur-sm group-hover:opacity-100 group-hover:rotate-180" />
+  <div className="relative z-10 px-8 py-2 bg-black rounded-[6px] overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-r from-indigo-300 via-pink-300 to-purple-300 opacity-0 transition duration-300 ease-out group-hover:opacity-100"></div>
+    <div className="relative z-10 text-white bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-pink-300 to-purple-300 group-hover:text-white group-hover:bg-none">
+      Lit up borders
+    </div>
+    <div className="absolute inset-0 border-4 border-transparent rounded-[6px] transition-all duration-300 ease-out group-hover:border-indigo-500 group-hover:border-dashed"></div>
+  </div>
+</button>
+
       </div>
 
       <div className=" flex justify-between items-center border-red-500  px-32 py-10 w-screen">
@@ -71,15 +76,15 @@ const Button = () => {
         <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border-black text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
           Figma Outline
         </button>
-        <button className="rounded-2xl border-2 border-dashed border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+        <button className="rounded-2xl border-2  border-black bg-white px-6 py-3 font-semibold uppercase text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
           Hover me
         </button>
       </div>
       <div>
         <Example />
         <ExampleEncryptButton />
-        <ButtonWrapper/>
-        <BorderOutlineButton/>
+        <ButtonWrapper />
+        <BorderOutlineButton />
       </div>
     </>
   );
